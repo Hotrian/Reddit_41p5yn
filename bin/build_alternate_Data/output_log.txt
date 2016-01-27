@@ -1,0 +1,61 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R7 200 Series (ID=0x6819)
+    Vendor:   ATI
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.238 seconds
+desktop: 2560x1440 60Hz; virtual: 4480x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Old Files\Users\Hotrian\Documents\Projects\Reddit_41p5yn\bin\build_alternate_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2128 -> priority: 1 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.538755 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.239066 ms (FindLiveObjects: 0.012222 ms CreateObjectMapping: 0.012222 ms MarkObjects: 0.194088 ms  DeleteObjects: 0.014666 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.338311 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.196044 ms (FindLiveObjects: 0.018088 ms CreateObjectMapping: 0.011733 ms MarkObjects: 0.152044 ms  DeleteObjects: 0.007333 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.358844 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.171600 ms (FindLiveObjects: 0.014177 ms CreateObjectMapping: 0.010266 ms MarkObjects: 0.135911 ms  DeleteObjects: 0.005377 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.347600 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.191644 ms (FindLiveObjects: 0.014666 ms CreateObjectMapping: 0.011244 ms MarkObjects: 0.151555 ms  DeleteObjects: 0.007822 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.325111 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.196533 ms (FindLiveObjects: 0.015644 ms CreateObjectMapping: 0.012222 ms MarkObjects: 0.155955 ms  DeleteObjects: 0.007333 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.388177 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.214133 ms (FindLiveObjects: 0.017111 ms CreateObjectMapping: 0.014666 ms MarkObjects: 0.168666 ms  DeleteObjects: 0.007333 ms)
+

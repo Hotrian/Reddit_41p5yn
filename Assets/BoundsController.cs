@@ -6,17 +6,17 @@
 [RequireComponent(typeof(Collider2D))]
 public class BoundsController : MonoBehaviour
 {
-    public PlayerController playerController;
+    public GameObject player;
 
     void Update()
     {
-        if (playerController != null)
+        if (player != null)
         {
-            gameObject.transform.position = new Vector3(playerController.gameObject.transform.position.x, -15f);
+            gameObject.transform.position = new Vector3(player.gameObject.transform.position.x, -15f);
         }
         else
         {
-            Debug.LogWarning("PlayerController missing");
+            Debug.LogWarning("Trackable GameObject missing");
             gameObject.SetActive(false);
         }
     }

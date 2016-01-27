@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private Collider2D myCollider;
     private Rigidbody2D myRigidbody;
     private bool isRunning = true;
-    
+
     private bool isJumping = false; // This is only true for one physics frame
     public int jumpsLeft = 0;
 
@@ -39,10 +39,13 @@ public class PlayerController : MonoBehaviour
         {
             _restartLevel();
         }
-        else if (!isJumping && jumpsLeft > 0 && Input.GetKeyDown(KeyCode.Space)) // Jump when Space is pressed
+        else if (isRunning)
         {
-            isJumping = true;
-            jumpsLeft--;
+            if (!isJumping && jumpsLeft > 0 && Input.GetKeyDown(KeyCode.Space)) // Jump when Space is pressed
+            {
+                isJumping = true;
+                jumpsLeft--;
+            }
         }
     }
 

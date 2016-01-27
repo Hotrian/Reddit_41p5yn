@@ -53,6 +53,20 @@ public class CameraController : MonoBehaviour
     }
 
     /// <summary>
+    /// Parent the CameraController to a given CameraControllerNoYAxisFollow.
+    /// </summary>
+    /// <param name="control">The CameraControllerNoYAxisFollow to attach to.</param>
+    public void attachCamera(CameraControllerNoYAxisFollow control)
+    {
+        gameObject.transform.parent = control.gameObject.transform;
+        if (myRigidbody == null)
+        {
+            myRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        }
+        myRigidbody.isKinematic = true;
+    }
+
+    /// <summary>
     /// Detach the CameraController which will cause it to move on it's own instead of following a PlayerController.
     /// </summary>
     public void detachCamera()
