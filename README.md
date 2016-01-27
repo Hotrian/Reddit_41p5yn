@@ -1,7 +1,11 @@
 # Reddit_41p5yn
 Testing an endless runner's camera.
 
-Runs great on Win32 but needs a slight fix for web if you mind that tiny stutter when you die.
+[WebGL link(Recommended)](http://hotrian.com/reddit_41p5yn_webgl/)
+
+[Webplayer link](http://hotrian.com/reddit_41p5yn.html)
+
+Runs great on Win32 and WebGL, though the standard Webplayer has a tiny stutter when you die.
 
 It seems that the Webplayer doesn't zero velocity when colliding before triggering OnCollision, so that there is a slight stutter as the camera doesn't take control until the following frame.
 
