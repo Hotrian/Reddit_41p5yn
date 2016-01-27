@@ -32,32 +32,28 @@ public class CameraController : MonoBehaviour
     // Keep running without the player if necessary
     void FixedUpdate()
     {
-        if (myRigidbody != null)
+        if (!myRigidbody.isKinematic) // If we are kinematic we are attached to something
         {
-            if (!myRigidbody.isKinematic) // If we are kinematic we are attached to something
-            {
-                myRigidbody.velocity = new Vector2(PlayerController.runSpeed, 0f); // Move at the player's normal run speed if we aren't attached to one
-            }
+            myRigidbody.velocity = new Vector2(PlayerController.runSpeed, 0f); // Move at the player's normal run speed if we aren't attached to one
         }
     }
 
     /// <summary>
-    /// Parent the CameraController to a given PlayerController
+    /// Parent the CameraController to a given PlayerController.
     /// </summary>
-    /// <param name="c"></param>
-    public void attachCamera(PlayerController c)
+    /// <param name="control">The PlayerController to attach to.</param>
+    public void attachCamera(PlayerController control)
     {
-        gameObject.transform.parent = c.gameObject.transform;
+        gameObject.transform.parent = control.gameObject.transform;
         if (myRigidbody == null)
         {
             myRigidbody = gameObject.GetComponent<Rigidbody2D>();
         }
         myRigidbody.isKinematic = true;
-
     }
 
     /// <summary>
-    /// Detach the CameraController which will cause it to move on it's own instead of following a PlayerController
+    /// Detach the CameraController which will cause it to move on it's own instead of following a PlayerController.
     /// </summary>
     public void detachCamera()
     {

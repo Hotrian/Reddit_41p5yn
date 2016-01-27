@@ -17,6 +17,7 @@ public class BoundsController : MonoBehaviour
         else
         {
             Debug.LogWarning("PlayerController missing");
+            gameObject.SetActive(false);
         }
     }
 }
