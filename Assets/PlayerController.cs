@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y); // Move by fall only
             if (gameObject.transform.position.y < -15f) // We fell outside of the bounds (but our collider is disabled here)
             {
                 _restartLevel();
