@@ -4,7 +4,7 @@
 public class CameraController : MonoBehaviour
 {
     [Range(1f, 128f)]
-    public float zoomScale = 1f; // Must match texture import units / mesh units
+    public float zoomScale = 1f;
 
     private float lastPixelWidth = 0f;
     private float lastPixelHeight = 0f;
