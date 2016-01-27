@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Camera) ,typeof(Rigidbody2D))]
+[RequireComponent(typeof(Camera), typeof(Rigidbody2D))]
 public class CameraController : MonoBehaviour
 {
     [Range(1f, 128f)]
@@ -20,10 +20,10 @@ public class CameraController : MonoBehaviour
     // Resize the game camera
     void Update()
     {
-        var tVar = Screen.height / (2f * zoomScale);
-        if (myCamComponent.orthographicSize != tVar || lastPixelWidth != myCamComponent.pixelWidth || lastPixelHeight != myCamComponent.pixelHeight)
+        float tOrthosize = Screen.height / (2f * zoomScale);
+        if (myCamComponent.orthographicSize != tOrthosize || lastPixelWidth != myCamComponent.pixelWidth || lastPixelHeight != myCamComponent.pixelHeight)
         {
-            myCamComponent.orthographicSize = tVar;
+            myCamComponent.orthographicSize = tOrthosize;
             lastPixelWidth = myCamComponent.pixelWidth;
             lastPixelHeight = myCamComponent.pixelHeight;
         }
