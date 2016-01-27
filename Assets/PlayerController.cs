@@ -54,15 +54,17 @@ public class PlayerController : MonoBehaviour
             {
                 _stopRunning(); // we crashed (into something)
             }
-
-            if (isJumping) // We jumped this frame
-            {
-                isJumping = false; // Let us jump again next frame
-                myRigidbody.velocity = new Vector2(runSpeed, jumpHeight); // Move by run and jump
-            }
             else
             {
-                myRigidbody.velocity = new Vector2(runSpeed, myRigidbody.velocity.y); // Move by run
+                if (isJumping) // We jumped this frame
+                {
+                    isJumping = false; // Let us jump again next frame
+                    myRigidbody.velocity = new Vector2(runSpeed, jumpHeight); // Move by run and jump
+                }
+                else
+                {
+                    myRigidbody.velocity = new Vector2(runSpeed, myRigidbody.velocity.y); // Move by run
+                }
             }
         }
         else
